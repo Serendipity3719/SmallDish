@@ -1,0 +1,69 @@
+*{  /* 这是一个全局选择器，它将样式应用到页面上的所有元素。 */
+    padding:0; /* 移除所有元素的内边距 */
+    margin: 0; /* 移除所有元素的外边距 */
+}
+a{/* 这个选择器针对所有<a>（链接）元素。 */
+    text-decoration: none;/* 去除链接的下划线 */
+}
+.nav-header{
+    height: 90px;
+    width: 100%;
+    background: rgba(0,0,0,.6);
+}
+.head-contain{
+    width: 1180px;
+    height: 90px;
+    margin: 0 auto; /* 水平居中这个容器 */
+    text-align: center; /* 设置容器内文本水平居中 */
+}
+.top-logo,.top-nav,.top-nav li,.top-right{
+    height: 90px;
+    display: inline-block;  /* 使这些元素以行内块的形式显示，允许设置宽度和高度。 */
+    vertical-align: top;    /* 设置这些元素的垂直对齐方式。 */
+}
+.top-nav{
+    margin: 0 48px;    /* 设置左右外边距 */
+}
+.top-nav li{
+    line-height: 90px;    /* 设置行高，使得文本垂直居中。 */
+    width: 90px;    /* 设置列表项的宽度 */
+}
+.top-nav li a{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.top-nav li a:hover{
+    color: blue;
+}
+
+.top-right a{
+    display: inline-block;  /* 使链接以行内块的形式显示。 */
+    font-size: 16px;
+    text-align: center;
+    margin-top: 25px;    /* 设置上外边距 */
+    border-radius: 35px;    /* 设置边框圆角 */
+}
+.top-right a:first-of-type{
+    width: 93px;
+    height: 38px;
+    line-height: 38px;
+    color: #fad65c;
+    border: 1px #fad65c solid;
+}
+.top-right a:first-of-type:hover{
+    color: #986b0d;
+    background: #fad65c;
+}
+.top-right a:last-of-type{
+    width: 140px;
+    height: 40px;
+    font-weight: 700;    /* 设置字体加粗 */
+    line-height: 40px;    /* 设置行高，使文本垂直居中 */
+    background: #fad65c;
+    color: #986b0d;
+}
+.top-right a:last-of-type:hover{
+    background: #fddc6c;
+}

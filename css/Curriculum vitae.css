@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74ebd5, #9face6, #b9f2c1);
+    background-size: 300% 300%;
+    animation: gradientBG 15s ease infinite;
+    color: #333;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+header {
+    background: none;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-size: 1.75em;
+}
+
+p {
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+
+strong {
+    color: #333;
+    font-weight: 1000;
+}
+
+.content {
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: space-between; /* 左右两栏之间留有间隔 */
+}
+
+.left-column, .right-column {
+    flex: 1; /* 两栏平分容器宽度 */
+    padding: 20px;
+    box-sizing: border-box; /* 边框和内边距包含在元素宽度内 */
+}
+
+.left-column {
+    margin-right: 20px; /* 给左侧栏留出一些间隔 */
+}
+
+.profile-picture {
+    display: block; /* 使图片宽度自适应其容器 */
+    max-width: 200px; /* 图片最大宽度不超过其容器 */
+    height: auto; /* 保持图片宽高比 */
+    margin: 0 auto; /* 水平居中显示 */
+    border: 4px solid #fff; /* 可选：给图片添加白色边框 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 可选：添加阴影效果 */
+    margin-bottom: 20px; /* 与基本信息部分保持一定间隔 */
+}
+
+/* 可以添加一些响应式设计，使页面在不同设备上更美观 */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+

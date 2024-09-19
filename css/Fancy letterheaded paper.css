@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box; /* 所有元素的盒模型边框和内边距包含在宽度和高度内 */
+}
+
+html {
+  font-family: sans-serif; /* 设置默认字体为无衬线字体 */
+}
+
+body {
+  margin: 0; /* 移除body的外边距 */
+  background: #ccc;
+}
+
+article {
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative; /* 设置文章的定位为相对定位，用于绝对定位子元素的参照 */
+}
+
+address {
+  position: absolute; 
+  bottom: 8mm;
+  right: 20mm;
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* background images, border */
+
+article {
+  background: url(../img/top-image.png) no-repeat left top; /* 为文章设置背景图片，不重复，放置在顶部左侧  “添加另一个背景声明，该声明仅将顶部图像添加到字母的顶部，作为不支持上一个声明的浏览器的后备方案。”*/ 
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.2)), /* 为文章设置渐变背景，从顶部到底部由暗到透明再到暗 */
+              url(../img/top-image.png) no-repeat left top, /* 重复顶部图片设置，作为渐变背景的底层 */
+              url(../img/bottom-image.png) no-repeat left bottom; /* 为文章底部添加背景图片，不重复，放置在底部左侧 */
+  background-color: white;
+  border-top: 1mm solid red;
+  border-bottom: 1mm solid red;
+}
+
+h1 {
+  background-image: url(../img/logo-star.png);  /* 为标题设置背景图片 */
+  /* filter: drop-shadow(3px 3px 3px black); */
+  border-radius: 64px; /* 设置标题边框圆角为64像素，形成圆形 */
+  box-shadow: 3px 3px 3px black;  /* 给标题添加阴影效果，水平偏移3像素，垂直偏移3像素，模糊半径3像素，颜色黑色 */
+}
